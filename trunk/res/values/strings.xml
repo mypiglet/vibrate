@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Vibrate</string>
+    <string name="turn_on">Turn on</string>
+    <string name="turn_off">Turn off</string>
+    <string name="vibrate_constantly">Constantly</string>
+    <string name="vibrate_diapason">Diapason</string>
+
+</resources>
