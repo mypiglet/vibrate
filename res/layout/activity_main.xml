@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    tools:context="llp.vibrate.MainActivity" >
+
+    <RadioGroup
+        android:id="@+id/rgVibrateMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100" android:visibility="visible" android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbConstantly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="45"
+            android:checked="true"
+            android:text="@string/vibrate_constantly" />
+
+        <RadioButton
+            android:id="@+id/rbVibrate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="45"
+            android:text="@string/vibrate_diapason" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btClick"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_marginTop="30dp"
+        android:onClick="click"
+        android:text="@string/turn_on"
+        android:textAlignment="center" />
+
+</RelativeLayout>
