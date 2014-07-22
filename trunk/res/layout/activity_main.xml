@@ -9,13 +9,16 @@
         android:id="@+id/rgVibrateMode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="100" android:visibility="visible" android:orientation="horizontal">
+        android:onClick="rgClick"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="100" >
 
         <RadioButton
             android:id="@+id/rbConstantly"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="45"
+            android:layout_weight="50"
             android:checked="true"
             android:text="@string/vibrate_constantly" />
 
@@ -23,7 +26,7 @@
             android:id="@+id/rbVibrate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="45"
+            android:layout_weight="50"
             android:text="@string/vibrate_diapason" />
     </RadioGroup>
 
@@ -31,8 +34,9 @@
         android:id="@+id/btClick"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
         android:onClick="click"
         android:text="@string/turn_on"
         android:textAlignment="center" />
